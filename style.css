@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 80px;
+    font-family: Hack, sans-serif;
+}
+
+p {
+    text-align: center;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    -webkit-background-clip: text;
+    animation: shine 5s linear infinite;
+    -webkit-text-fill-color: transparent;
+    background-size: 80%;
+    position: relative;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+@keyframes shine{
+    0%{
+        background-position-x: -500%;
+    }
+    100%{
+        background-position-x: 500%;
+    }
+}
